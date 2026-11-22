@@ -26,7 +26,7 @@
       }
 
       let pct = 0;
-      const messages = ['Menjelajah kedalaman', 'Mengeluarkan gelembung', 'Menangkap cahaya', 'Hampir sampai'];
+      const messages = ['Charting the depths', 'Releasing bubbles', 'Catching the light', 'Almost ashore'];
       let mIndex = 0;
 
       const interval = setInterval(() => {
@@ -78,14 +78,14 @@
 
     const data = (SETTINGS.memories && SETTINGS.memories.length)
       ? SETTINGS.memories
-      : [{ depth: '4m', year: 'Bab Pertama', title: 'Kenangan yang layak disimpan', text: 'Tambahkan kenanganmu di config/settings.js.' }];
+      : [{ depth: '4m', year: 'Chapter One', title: 'A memory worth keeping', text: 'Add your memory in config/settings.js.' }];
 
     list.innerHTML = `
       <div class="memories__spine" aria-hidden="true"><div class="memories__spine-fill"></div></div>
     ` + data.map((m) => `
       <div class="memory-item">
         <div class="memory-item__node"><span class="memory-item__node-dot"></span></div>
-        <div class="memory-item__depth">${escapeHtml(m.depth)} di bawah permukaan</div>
+        <div class="memory-item__depth">${escapeHtml(m.depth)} below surface</div>
         <div class="memory-item__card">
           <div class="memory-item__year">${escapeHtml(m.year)}</div>
           <h3 class="memory-item__title">${escapeHtml(m.title)}</h3>
@@ -130,7 +130,7 @@
 
     const data = (SETTINGS.wishes && SETTINGS.wishes.length)
       ? SETTINGS.wishes
-      : [{ icon: 'heart', text: 'Selamat ulang tahun!' }];
+      : [{ icon: 'heart', text: 'Happy birthday!' }];
 
     grid.innerHTML = data.map((w, i) => `
       <div class="wish-card" style="--d:${(i % 3) * 0.1}s">

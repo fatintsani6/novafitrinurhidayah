@@ -98,7 +98,7 @@
     });
     stage.setAttribute('role', 'button');
     stage.setAttribute('tabindex', '0');
-    stage.setAttribute('aria-label', 'Buka surat');
+    stage.setAttribute('aria-label', 'Open the letter');
   }
 
   if (document.readyState === 'loading') {

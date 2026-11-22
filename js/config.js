@@ -22,12 +22,12 @@
   window.OCEAN = {
     config: {
       sections: [
-        { id: 'hero',     label: 'Beranda'   },
-        { id: 'memories', label: 'Kenangan'  },
-        { id: 'gallery',  label: 'Galeri'   },
-        { id: 'letter',   label: 'Surat'},
-        { id: 'wishes',   label: 'Harapan'    },
-        { id: 'ending',   label: 'Penutup' }
+        { id: 'hero',     label: 'Surface'   },
+        { id: 'memories', label: 'Memories'  },
+        { id: 'gallery',  label: 'Gallery'   },
+        { id: 'letter',   label: 'The Letter'},
+        { id: 'wishes',   label: 'Wishes'    },
+        { id: 'ending',   label: 'Resurface' }
       ],
       recipientName: S.recipientName || 'You',
       audioTracks:   S.musicTracks   || [],
